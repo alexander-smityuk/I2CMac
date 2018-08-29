@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0CDAF8592136DAE3006C26A9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CDAF8582136DAE3006C26A9 /* main.cpp */; };
+		0CDAF8612136DAF5006C26A9 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDAF8602136DAF5006C26A9 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		0CDAF8552136DAE3006C26A9 /* I2CMac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = I2CMac; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CDAF8582136DAE3006C26A9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0CDAF8602136DAF5006C26A9 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		0CDAF8622136DB78006C26A9 /* i2c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = i2c.h; path = ../../../Downloads/i2c/i2c.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CDAF8612136DAF5006C26A9 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +47,7 @@
 			children = (
 				0CDAF8572136DAE3006C26A9 /* I2CMac */,
 				0CDAF8562136DAE3006C26A9 /* Products */,
+				0CDAF85F2136DAF5006C26A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +62,18 @@
 		0CDAF8572136DAE3006C26A9 /* I2CMac */ = {
 			isa = PBXGroup;
 			children = (
+				0CDAF8622136DB78006C26A9 /* i2c.h */,
 				0CDAF8582136DAE3006C26A9 /* main.cpp */,
 			);
 			path = I2CMac;
+			sourceTree = "<group>";
+		};
+		0CDAF85F2136DAF5006C26A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CDAF8602136DAF5006C26A9 /* IOKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
